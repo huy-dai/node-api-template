@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.4",
+    "nodemon": "^2.0.20",
+    "rimraf": "^4.1.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "name": "dormdigest-backend",
+  "description": "Backend that manage parsing and storing of dormspam events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sipb/dormdigest-backend.git"
+  },
+  "author": "sipb-dormdigest@mit.edu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sipb/dormdigest-backend/issues"
+  },
+  "homepage": "https://github.com/sipb/dormdigest-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
